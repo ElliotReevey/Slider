@@ -1,0 +1,147 @@
+/*	Basic styles for advanced content slider
+	Updated:	Thu 10.18.07 @ 5:15 p.m.
+	Author:		Your Name
+	----------------------------------------------------*/
+	
+.advanced-content-slider{
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+/*	Slide menu
+	------------------------------------------------------ */
+.advanced-slide-menu{
+	float: left;
+	width: 300px;
+}
+.advanced-slide-menu h2{
+	background: #fed804;
+	padding: 8px 10px;
+	margin: 0;
+	color: #000;
+	border-bottom: 1px solid #ccc;
+}
+.advanced-slide-menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.advanced-slide-menu ul li{
+	display: block;
+	width: 280px;
+	padding: 10px;
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.advanced-slide-menu ul li:hover{
+	cursor: pointer;
+}
+.advanced-slide-menu ul li.active{
+	background: #ddd;
+}
+.advanced-slide-menu ul li.last{
+	border-bottom: none !important;
+}
+.advanced-slide-menu ul li h3{
+	color: #222;
+	padding: 0px 0px 5px 0px;
+	margin: 0;
+	font-size: 0.9375em;
+	line-height: 1.2;
+}
+.advanced-slide-menu ul li span{
+	color: #555;
+	font-size: 0.75em;
+	line-height: 1.2;
+	display: block;
+}
+.advanced-slide-menu ul li img.menu-list-icon{
+	float: left;
+	margin-right: 12px;
+	max-width: 90px;
+	max-height: 70px;
+	height: 70px;
+	width: 90px;
+}
+
+/*	Content area
+	------------------------------------------------------ */
+
+.advanced-slide-contents{
+	float: right;
+	width: 620px;
+	background: #494c54;
+	padding: 20px;
+}
+.advanced-slide-contents ul li.display-off{
+	display: none;
+}
+.advanced-slide-contents ul li h3{
+ 	clear: both;
+}
+.advanced-slide-contents ul li ul.sub-slides{
+	display: none;
+}
+
+/*	Sub Slides
+	------------------------------------------------------ */
+	
+div.sub-slides{
+	width: 620px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+div.sub-slides img{
+	width: 620px;
+	height: 300px;
+	max-width: 620px;
+	max-height: 300px;
+}
+div.controls{
+	position: relative;
+	margin: 15px 0px 35px 0px;
+}
+span.prev{
+	position: absolute; 
+	left: 0px;
+	top: 0px;
+	background: url(../images/arrow-left.png) no-repeat;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;	
+}
+span.next{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: url(../images/arrow-right.png) no-repeat;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+}
+nav.pager{
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	width: 150px;
+	text-align: center;
+	margin-top: 12px;
+}
+span.prev:hover,
+span.next:hover{
+	opacity: 0.8;
+}
+nav.pager a{
+	background-color: #202126;
+	color: #eee;
+	padding: 2px 5px;
+	line-height: 1.1;
+	display: inline-block;
+	margin-right: 10px;
+}
+nav.pager a.activeSlide{
+	background-color: #b6c4dc;
+	color: #000;
+}
